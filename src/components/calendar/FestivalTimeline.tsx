@@ -6,25 +6,6 @@ import { Calendar, MapPin, Tag, Info } from 'lucide-react';
 export default function FestivalTimeline() {
   return (
     <div className="w-full max-w-6xl mx-auto px-6 py-24 relative z-10">
-      <div className="text-center mb-20">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6"
-        >
-          A Year of <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Celebration</span>
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="text-white/60 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
-        >
-          Immerse yourself in the heart of French culture through celebrations that define the nation's soul. From centuries-old traditions to vibrant modern expressions, experience the festivals that capture the essence of France's joie de vivre and cultural pride.
-        </motion.p>
-      </div>
 
       <div className="relative">
         {/* Central Connecting Line */}
