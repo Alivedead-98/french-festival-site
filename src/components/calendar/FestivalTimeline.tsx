@@ -2,8 +2,11 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { festivals } from '../../data/festivals';
 import { Calendar, MapPin, Tag, Info } from 'lucide-react';
+import { useTranslation } from '../../i18n';
 
 export default function FestivalTimeline() {
+  const { t } = useTranslation();
+
   return (
     <div className="w-full max-w-6xl mx-auto px-6 py-24 relative z-10">
 
@@ -70,7 +73,7 @@ export default function FestivalTimeline() {
                   <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm w-full">
                     <h4 className="flex items-center space-x-2 text-white font-bold mb-4">
                       <Info className="w-5 h-5 text-purple-400" />
-                      <span>Fascinating Facts</span>
+                      <span>{t('timeline.fascinatingFacts')}</span>
                     </h4>
                     <ul className="space-y-3 text-left">
                       {festival.facts.map((fact, i) => (

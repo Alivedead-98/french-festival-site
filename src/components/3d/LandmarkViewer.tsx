@@ -4,7 +4,7 @@ import { useStore } from '../../store/useStore';
 
 export default function LandmarkViewer() {
   const { selectedCity } = useStore();
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLIFrameElement>(null);
 
   if (!selectedCity) return null;
 

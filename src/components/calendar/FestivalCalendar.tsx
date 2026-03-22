@@ -3,17 +3,15 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Festival, festivals, FestivalCategory } from '../../data/festivals';
 import FestivalModal from '../festival/FestivalModal';
 import { Sparkles, Filter } from 'lucide-react';
-
-const MONTHS = [
-  'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin',
-  'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'
-];
+import { useTranslation } from '../../i18n';
 
 const CATEGORIES: FestivalCategory[] = [
   'Music', 'Food & Wine', 'Film', 'National Holidays', 'Cultural Traditions', 'Sports'
 ];
 
 export default function FestivalCalendar() {
+  const { t, getMonthNames, translateCategory } = useTranslation();
+  const months = getMonthNames();
   const [selectedCategory, setSelectedCategory] = useState<FestivalCategory | null>(null);
   const [selectedFestival, setSelectedFestival] = useState<Festival | null>(null);
 
@@ -39,7 +37,7 @@ export default function FestivalCalendar() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4"
           >
-            Yearly <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-white to-red-500">Calendar</span>
+            {t('calendar.title')}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -48,7 +46,7 @@ export default function FestivalCalendar() {
             transition={{ delay: 0.1 }}
             className="text-white/60 text-lg max-w-2xl"
           >
-            Explore the vibrant festivals celebrated throughout the year in France. Click on any month to discover what's being celebrated.
+            {t('calendar.subtitle')}
           </motion.p>
         </div>
 
@@ -61,16 +59,16 @@ export default function FestivalCalendar() {
         >
           <div className="flex items-center space-x-2 px-3 border-r border-white/10">
             <Filter className="w-4 h-4 text-white/50" />
-            <span className="text-sm font-medium text-white/70">Filter</span>
+            <span className="text-sm font-medium text-white/70">{t('calendar.filter')}</span>
           </div>
           <select
             className="bg-transparent text-white text-sm font-medium focus:outline-none cursor-pointer appearance-none pr-4"
             value={selectedCategory || ''}
             onChange={(e) => setSelectedCategory(e.target.value as FestivalCategory || null)}
           >
-            <option value="" className="bg-black text-white">All Categories</option>
+            <option value="" className="bg-black text-white">{t('calendar.allCategories')}</option>
             {CATEGORIES.map(cat => (
-              <option key={cat} value={cat} className="bg-black text-white">{cat}</option>
+              <option key={cat} value={cat} className="bg-black text-white">{translateCategory(cat)}</option>
             ))}
           </select>
         </motion.div>
@@ -78,7 +76,7 @@ export default function FestivalCalendar() {
 
       {/* Calendar Grid - 3x4 for 12 months */}
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-        {MONTHS.map((monthName, index) => {
+        {months.map((monthName, index) => {
           const monthNum = index + 1;
           const monthFestivals = getFestivalsForMonth(monthNum);
           const hasFestivals = monthFestivals.length > 0;
@@ -140,7 +138,7 @@ export default function FestivalCalendar() {
 
                   {!hasFestivals && (
                     <div className="text-white/40 text-sm italic py-8 text-center flex items-center justify-center h-full">
-                      No festivals this month
+                      {t('calendar.noFestivals')}
                     </div>
                   )}
                 </div>
@@ -149,7 +147,7 @@ export default function FestivalCalendar() {
                 {hasFestivals && (
                   <div className="mt-4 pt-4 border-t border-white/10">
                     <span className="text-xs font-medium text-blue-400 bg-blue-500/20 px-3 py-1 rounded-full">
-                      {monthFestivals.length} {monthFestivals.length === 1 ? 'Festival' : 'Festivals'}
+                      {monthFestivals.length} {monthFestivals.length === 1 ? t('calendar.festival') : t('calendar.festivals')}
                     </span>
                   </div>
                 )}

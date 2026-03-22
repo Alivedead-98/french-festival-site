@@ -2,9 +2,11 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useStore } from '../../store/useStore';
 import { MapPin, Users, Landmark, Info, Building, Calendar, Star } from 'lucide-react';
+import { useTranslation } from '../../i18n';
 
 export default function CityInfo() {
   const { selectedCity } = useStore();
+  const { t } = useTranslation();
 
   return (
     <AnimatePresence>
@@ -17,7 +19,7 @@ export default function CityInfo() {
           className="absolute left-0 top-0 bottom-0 w-full md:w-[400px] lg:w-[480px] z-20 flex flex-col justify-center p-6 md:p-10 pointer-events-none"
         >
           <div className="bg-black/40 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 shadow-2xl pointer-events-auto overflow-y-auto max-h-[90vh] custom-scrollbar">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
@@ -26,7 +28,7 @@ export default function CityInfo() {
               {selectedCity.name}
             </motion.h2>
 
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
@@ -36,7 +38,7 @@ export default function CityInfo() {
             </motion.p>
 
             <div className="space-y-6">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
@@ -46,12 +48,12 @@ export default function CityInfo() {
                   <Users className="w-5 h-5 text-blue-400" />
                 </div>
                 <div>
-                  <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-1">Population</h4>
+                  <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-1">{t('cityInfo.population')}</h4>
                   <p className="text-white font-medium">{selectedCity.population}</p>
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
@@ -61,7 +63,7 @@ export default function CityInfo() {
                   <Landmark className="w-5 h-5 text-emerald-400" />
                 </div>
                 <div>
-                  <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-1">Cultural Importance</h4>
+                  <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-1">{t('cityInfo.culturalImportance')}</h4>
                   <p className="text-white text-sm leading-relaxed">{selectedCity.culturalImportance}</p>
                 </div>
               </motion.div>
@@ -77,7 +79,7 @@ export default function CityInfo() {
                     <Building className="w-5 h-5 text-yellow-400" />
                   </div>
                   <div className="w-full">
-                    <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Key Landmarks</h4>
+                    <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">{t('cityInfo.landmarks')}</h4>
                     <ul className="space-y-2">
                       {selectedCity.landmarks.map((landmark, index) => (
                         <li key={index} className="flex items-start space-x-2 text-sm text-white/80">
@@ -101,7 +103,7 @@ export default function CityInfo() {
                     <Calendar className="w-5 h-5 text-red-400" />
                   </div>
                   <div className="w-full">
-                    <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Festivals & Events</h4>
+                    <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">{t('cityInfo.festivals')}</h4>
                     <ul className="space-y-2">
                       {selectedCity.festivals.map((festival, index) => (
                         <li key={index} className="flex items-start space-x-2 text-sm text-white/80">
@@ -125,7 +127,7 @@ export default function CityInfo() {
                     <Star className="w-5 h-5 text-cyan-400" />
                   </div>
                   <div className="w-full">
-                    <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Famous For</h4>
+                    <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">{t('cityInfo.famousFor')}</h4>
                     <ul className="space-y-2">
                       {selectedCity.famousFor.map((item, index) => (
                         <li key={index} className="flex items-start space-x-2 text-sm text-white/80">
@@ -138,7 +140,7 @@ export default function CityInfo() {
                 </motion.div>
               )}
 
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 0.5 }}
@@ -148,7 +150,7 @@ export default function CityInfo() {
                   <Info className="w-5 h-5 text-purple-400" />
                 </div>
                 <div className="w-full">
-                  <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">Interesting Facts</h4>
+                  <h4 className="text-white/50 text-xs font-semibold uppercase tracking-wider mb-2">{t('cityInfo.facts')}</h4>
                   <ul className="space-y-2">
                     {selectedCity.facts.map((fact, index) => (
                       <li key={index} className="flex items-start space-x-2 text-sm text-white/80">

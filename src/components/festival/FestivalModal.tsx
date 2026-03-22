@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, MapPin, Calendar, Info, Tag } from 'lucide-react';
 import { Festival } from '../../data/festivals';
+import { useTranslation } from '../../i18n';
 
 interface FestivalModalProps {
   festival: Festival | null;
@@ -9,6 +10,8 @@ interface FestivalModalProps {
 }
 
 export default function FestivalModal({ festival, onClose }: FestivalModalProps) {
+  const { t } = useTranslation();
+
   return (
     <AnimatePresence>
       {festival && (
@@ -46,7 +49,7 @@ export default function FestivalModal({ festival, onClose }: FestivalModalProps)
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent" />
-              
+
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="flex items-center space-x-2 mb-2">
                   <span className="px-3 py-1 bg-blue-500/20 text-blue-400 border border-blue-500/30 rounded-full text-xs font-semibold uppercase tracking-wider backdrop-blur-md">
@@ -67,7 +70,7 @@ export default function FestivalModal({ festival, onClose }: FestivalModalProps)
                     <Calendar className="w-5 h-5 text-emerald-400" />
                   </div>
                   <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wider font-semibold">Date</p>
+                    <p className="text-xs text-white/50 uppercase tracking-wider font-semibold">{t('festivalModal.date')}</p>
                     <p className="font-medium">{festival.date}</p>
                   </div>
                 </div>
@@ -76,7 +79,7 @@ export default function FestivalModal({ festival, onClose }: FestivalModalProps)
                     <MapPin className="w-5 h-5 text-rose-400" />
                   </div>
                   <div>
-                    <p className="text-xs text-white/50 uppercase tracking-wider font-semibold">Location</p>
+                    <p className="text-xs text-white/50 uppercase tracking-wider font-semibold">{t('festivalModal.location')}</p>
                     <p className="font-medium">{festival.city}</p>
                   </div>
                 </div>
@@ -86,7 +89,7 @@ export default function FestivalModal({ festival, onClose }: FestivalModalProps)
                 <div>
                   <h3 className="text-lg font-bold text-white mb-2 flex items-center space-x-2">
                     <Info className="w-5 h-5 text-blue-400" />
-                    <span>About the Festival</span>
+                    <span>{t('festivalModal.about')}</span>
                   </h3>
                   <p className="text-white/70 leading-relaxed">
                     {festival.description}
@@ -96,7 +99,7 @@ export default function FestivalModal({ festival, onClose }: FestivalModalProps)
                 <div>
                   <h3 className="text-lg font-bold text-white mb-3 flex items-center space-x-2">
                     <Tag className="w-5 h-5 text-purple-400" />
-                    <span>Interesting Facts</span>
+                    <span>{t('festivalModal.facts')}</span>
                   </h3>
                   <ul className="space-y-3">
                     {festival.facts.map((fact, index) => (

@@ -3,9 +3,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useStore } from '../../store/useStore';
 import { Search, X, Map as MapIcon, MapPin } from 'lucide-react';
 import { cities } from '../../data/cities';
+import { useTranslation } from '../../i18n';
 
 export default function Overlay() {
   const { selectedCity, setSelectedCity, isMapLoaded } = useStore();
+  const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState('');
 
   const filteredCities = cities.filter(city =>
@@ -29,7 +31,7 @@ export default function Overlay() {
             </div>
             <input
               type="text"
-              placeholder="Search cities..."
+              placeholder={t('overlay.searchPlaceholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="bg-black/40 backdrop-blur-md border border-white/10 text-white text-sm rounded-full pl-10 pr-4 py-2 w-48 focus:w-64 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 shadow-lg"
@@ -61,7 +63,7 @@ export default function Overlay() {
                       ))}
                     </ul>
                   ) : (
-                    <div className="px-4 py-3 text-white/50 text-sm text-center">No cities found</div>
+                    <div className="px-4 py-3 text-white/50 text-sm text-center">{t('overlay.noCities')}</div>
                   )}
                 </motion.div>
               )}
@@ -84,7 +86,7 @@ export default function Overlay() {
               className="flex items-center space-x-2 bg-white text-black px-6 py-3 rounded-full font-bold shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.5)] transition-all"
             >
               <MapIcon className="w-5 h-5" />
-              <span>Return to Map</span>
+              <span>{t('overlay.returnToMap')}</span>
             </motion.button>
           )}
         </AnimatePresence>
@@ -100,7 +102,7 @@ export default function Overlay() {
             className="fixed inset-0 bg-black z-50 flex flex-col items-center justify-center pointer-events-auto"
           >
             <div className="w-16 h-16 border-4 border-white/10 border-t-blue-500 rounded-full animate-spin mb-6"></div>
-            <h2 className="text-white text-xl font-medium tracking-widest uppercase">Loading Experience</h2>
+            <h2 className="text-white text-xl font-medium tracking-widest uppercase">{t('overlay.loading')}</h2>
           </motion.div>
         )}
       </AnimatePresence>

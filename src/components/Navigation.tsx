@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Map, Calendar, Home } from 'lucide-react';
+import { Map, Calendar, Home, Globe, Volleyball } from 'lucide-react';
+import { useTranslation } from '../i18n';
 
 export default function Navigation() {
   const location = useLocation();
+  const { t, language, toggleLanguage } = useTranslation();
 
   return (
     <motion.nav
@@ -19,7 +21,7 @@ export default function Navigation() {
           <rect x="300" width="300" height="600" fill="white" />
           <rect x="600" width="300" height="600" fill="#ED2939" />
         </svg>
-        <span className="text-white font-bold text-xl tracking-tight">Explorateur Français</span>
+        <span className="text-white font-bold text-xl tracking-tight">{t('nav.title')}</span>
       </Link>
 
       <div className="flex items-center space-x-2 bg-black/40 backdrop-blur-md border border-white/10 rounded-full p-1 shadow-2xl">
@@ -28,22 +30,37 @@ export default function Navigation() {
           className={`flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-all ${location.pathname === '/' ? 'bg-white/10 text-white' : 'text-white/60 hover:text-white hover:bg-white/5'}`}
         >
           <Home className="w-4 h-4" />
-          <span>Home</span>
+          <span>{t('nav.home')}</span>
         </Link>
         <Link
           to="/calendar"
           className={`flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-all ${location.pathname === '/calendar' ? 'bg-white/10 text-white' : 'text-white/60 hover:text-white hover:bg-white/5'}`}
         >
           <Calendar className="w-4 h-4" />
-          <span>Calendar</span>
+          <span>{t('nav.calendar')}</span>
         </Link>
         <Link
           to="/map"
           className={`flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-all ${location.pathname === '/map' ? 'bg-white/10 text-white' : 'text-white/60 hover:text-white hover:bg-white/5'}`}
         >
           <Map className="w-4 h-4" />
-          <span>Explore Map</span>
+          <span>{t('nav.map')}</span>
         </Link>
+        <Link
+          to="/weather"
+          className={`flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-all ${location.pathname === '/weather' ? 'bg-white/10 text-white' : 'text-white/60 hover:text-white hover:bg-white/5'}`}
+        >
+          <Globe className="w-4 h-4" />
+          <span>{t('nav.weather')}</span>
+        </Link>
+        <button
+          type="button"
+          onClick={toggleLanguage}
+          className="flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium text-white/60 hover:text-white hover:bg-white/5 transition-all"
+        >
+          <Globe className="w-4 h-4" />
+          <span className="font-semibold">{language === 'en' ? 'FR' : 'EN'}</span>
+        </button>
       </div>
     </motion.nav>
   );
