@@ -9,7 +9,7 @@ export default function MapPage() {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-[#050505] font-sans selection:bg-blue-500/30">
       <Navigation />
-      
+
       {/* Background Map Layer */}
       <InteractiveMap />
 

@@ -16,176 +16,176 @@ export const festivals: Festival[] = [
   {
     id: 'epiphany',
     name: 'Epiphany (Galette des Rois)',
-    date: 'January 6',
+    date: '6 janvier',
     month: 1,
     city: 'Nationwide',
     category: 'Cultural Traditions',
-    description: 'The Epiphany, celebrated on January 6th, marks the arrival of the Three Wise Men. In France, this religious holiday has evolved into a beloved cultural tradition centered around the "Galette des Rois" (King Cake). Bakeries across the country produce millions of these flaky, frangipane-filled pastries. The tradition is deeply rooted in French family life, bringing generations together to share the cake and the excitement of finding the hidden charm.',
+    description: `L'Épiphanie, célébrée le 6 janvier, marque l'arrivée des Rois mages. En France, cette fête religieuse s'est transformée en une tradition culturelle très appréciée, centrée autour de la « Galette des Rois ». Dans tout le pays, les boulangeries confectionnent des millions de ces pâtisseries feuilletées fourrées à la frangipane. Cette tradition est profondément ancrée dans la vie de famille française, rassemblant les générations autour du partage de la galette et de l'excitation de découvrir la fève cachée.`,
     facts: [
-      'A small charm called "la fève" (originally a fava bean, now often a porcelain or plastic figurine) is hidden inside the cake.',
-      'The person who finds the charm in their slice becomes the king or queen for the day and wears a golden paper crown.',
-      'Traditionally, the youngest child in the room goes under the table to blindly assign who gets which slice, ensuring fairness.',
-      'Every year, a giant Galette des Rois is presented to the French President at the Élysée Palace, but it intentionally contains no fève, as a president cannot be crowned a king in a republic.'
+      'Une petite amulette appelée « la fève » (à l’origine une fève, aujourd’hui souvent une figurine en porcelaine ou en plastique) est cachée à l’intérieur de la galette.',
+      'La personne qui trouve la fève dans sa part devient roi ou reine de la journée et porte une couronne en papier doré.',
+      'Traditionnellement, l’enfant le plus jeune de la pièce se glisse sous la table pour distribuer les parts à l’aveugle, afin d’assurer l’équité.',
+      'Chaque année, une gigantesque Galette des Rois est offerte au président français à l’Élysée, mais elle ne contient volontairement pas de fève, car un président ne peut pas être couronné dans une république.'
     ],
     image: 'https://www.france.fi/wp-content/uploads/2024/12/Soiree-galettes-1098x617.jpg'
   },
   {
     id: 'nice-carnival',
     name: 'Nice Carnival',
-    date: 'February 15 - March 2',
+    date: '15 février - 2 mars',
     month: 2,
     city: 'Nice',
     category: 'Cultural Traditions',
-    description: 'The Nice Carnival is one of the world\'s major carnival events, rivaling those in Rio de Janeiro and Venice. Held on the stunning French Riviera, it spans two weeks of vibrant parades, colossal papier-mâché floats, and street performances. The carnival is split into two main events: the Carnival Parade (Corso Carnavalesque) and the Flower Parade (Bataille de Fleurs), both of which transform the city into a kaleidoscope of colors, music, and celebration.',
+    description: 'Le Carnaval de Nice est l’un des plus grands carnavals du monde, aux côtés de ceux de Rio et de Venise. Organisé sur la magnifique Côte d’Azur, il s’étend sur deux semaines de parades éclatantes, de chars en papier mâché géants et de spectacles de rue. Le carnaval est divisé en deux grands rendez-vous : le Corso Carnavalesque (parade) et la Bataille de Fleurs, qui transforment la ville en un kaléidoscope de couleurs, de musique et de fête.',
     facts: [
-      'The Bataille de Fleurs features spectacular flower-covered floats from which models throw over 100,000 locally grown flowers (mimosas, lilies, daisies) into the crowd.',
-      'The carnival dates back to 1294, making it one of the oldest recorded carnivals in the world.',
-      'Each year has a specific theme (e.g., "King of Space", "King of Cinema"), dictating the design of the giant floats.',
-      'The event culminates with the burning of the "King of Carnival" effigy at sea, followed by a massive fireworks display over the Baie des Anges.'
+      'La Bataille de Fleurs met en scène des chars couverts de fleurs spectaculaires d’où des mannequins jettent plus de 100 000 fleurs locales (mimosas, lys, marguerites) dans la foule.',
+      'Le carnaval remonte à 1294, ce qui en fait l’un des plus anciens carnavals enregistrés au monde.',
+      'Chaque année a un thème spécifique (par exemple « Roi de l’Espace », « Roi du Cinéma »), qui inspire la conception des chars géants.',
+      'L’événement se termine par la mise à feu du « Roi du Carnaval » en mer, suivie d’un feu d’artifice spectaculaire au-dessus de la Baie des Anges.'
     ],
     image: 'https://www.cia-france.com/media/3254/queen-of-the-carnivaljpg_1536x1024.webp'
   },
   {
     id: 'paris-marathon',
     name: 'Paris Marathon',
-    date: 'Early April',
+    date: 'début avril',
     month: 4,
     city: 'Paris',
     category: 'Sports',
-    description: 'The Schneider Electric Marathon de Paris is one of the biggest and most prestigious marathons in the world. It offers runners an unparalleled sightseeing tour of the French capital. The 42.195 km route takes participants through the heart of the city, passing iconic monuments, traversing historic parks, and running alongside the banks of the Seine River. It is a massive celebration of endurance, drawing athletes and spectators from all corners of the globe.',
+    description: 'Le Schneider Electric Marathon de Paris est l’un des plus grands et prestigieux marathons du monde. Il offre aux coureurs une visite incomparable de la capitale française. Le parcours de 42,195 km traverse le cœur de la ville, passant devant des monuments emblématiques, traversant des parcs historiques et longeant les quais de la Seine. C’est une immense célébration de l’endurance, attirant athlètes et spectateurs des quatre coins du globe.',
     facts: [
-      'The race begins on the famous Avenue des Champs-Élysées and finishes on Avenue Foch, near the Arc de Triomphe.',
-      'It attracts over 50,000 runners annually from more than 140 different countries.',
-      'The scenic route passes the Louvre, Notre-Dame Cathedral, the Eiffel Tower, and runs through both the Bois de Vincennes and the Bois de Boulogne.',
-      'Along the route, runners are treated to wine and cheese tasting stations, particularly towards the end of the race.'
+      'La course commence sur la célèbre avenue des Champs-Élysées et se termine sur l’avenue Foch, près de l’Arc de Triomphe.',
+      'Elle attire plus de 50 000 coureurs chaque année, venus de plus de 140 pays différents.',
+      'Le parcours pittoresque passe par le Louvre, Notre-Dame, la Tour Eiffel et traverse le bois de Vincennes et le bois de Boulogne.',
+      'Sur le parcours, les coureurs peuvent déguster des stations de vin et de fromage, surtout vers la fin de la course.'
     ],
     image: 'https://www.marathons.com/wp-content/uploads/20250413SEMP200120-min-scaled.jpg'
   },
   {
     id: 'cannes-film',
     name: 'Cannes Film Festival',
-    date: 'Mid-May',
+    date: 'mi-mai',
     month: 5,
     city: 'Cannes',
     category: 'Film',
-    description: 'The Festival de Cannes is arguably the most prestigious and publicized film festival in the world. Held annually in the resort town of Cannes on the French Riviera, it previews new films of all genres, including documentaries, from around the globe. The festival is an exclusive, invitation-only event that serves as a massive gathering for film industry professionals, celebrities, and journalists, heavily influencing global cinema trends and box office success.',
+    description: 'Le Festival de Cannes est sans doute le festival de cinéma le plus prestigieux et médiatisé au monde. Organisé chaque année dans la station balnéaire de Cannes, il présente des films de tous genres, y compris des documentaires, du monde entier. Le festival est un événement exclusif sur invitation qui réunit professionnels du cinéma, célébrités et journalistes, et influence fortement les tendances du cinéma mondial et le succès au box-office.',
     facts: [
-      'The highest prize awarded at the festival is the Palme d\'Or (Golden Palm), considered one of the most prestigious awards in the film industry.',
-      'Founded in 1946, it is one of the "Big Three" major European film festivals, alongside the Venice Film Festival and the Berlin International Film Festival.',
-      'The iconic red carpet steps (montée des marches) at the Palais des Festivals et des Congrès are a symbol of cinematic glamour.',
-      'The festival also hosts the Marché du Film, the busiest movie market in the world, where producers and distributors buy and sell film rights.'
+      'Le prix le plus élevé décerné au festival est la Palme d’Or, l’une des récompenses les plus prestigieuses du cinéma.',
+      'Fondé en 1946, il fait partie des « trois grands » festivals de cinéma européens, aux côtés de Venise et de Berlin.',
+      'Les fameuses marches rouges (montée des marches) du Palais des Festivals et des Congrès sont un symbole du glamour cinématographique.',
+      'Le festival accueille également le Marché du Film, le plus grand marché du film au monde, où producteurs et distributeurs achètent et vendent des droits de films.'
     ],
     image: 'https://cloudfront-eu-central-1.images.arcpublishing.com/thenational/RZYYX4BEWUDWO3QTOCGY36547I.jpg'
   },
   {
     id: 'fete-musique',
     name: 'Fête de la Musique',
-    date: 'June 21',
+    date: '21 juin',
     month: 6,
     city: 'Nationwide',
     category: 'Music',
-    description: 'Also known as Make Music Day, the Fête de la Musique is an annual, nationwide music celebration taking place on the summer solstice. The concept is simple: music everywhere and for everyone. Streets, parks, plazas, and even balconies are transformed into impromptu concert venues. The festival encourages both amateur and professional musicians to perform in public spaces, creating a joyous, chaotic, and deeply democratic celebration of musical expression.',
+    description: 'La Fête de la Musique, aussi appelée Make Music Day, est une célébration musicale nationale qui a lieu chaque année le solstice d’été. Le concept est simple : de la musique partout et pour tous. Rues, parcs, places et même balcons se transforment en scènes improvisées. Le festival encourage musiciens amateurs et professionnels à jouer dans l’espace public, créant une fête joyeuse, anarchique et profondément démocratique de l’expression musicale.',
     facts: [
-      'A strict rule of the festival is that all concerts must be completely free to the public, and artists perform for free.',
-      'It was initiated in France in 1982 by the Minister of Culture, Jack Lang, and has since become a massive cultural phenomenon.',
-      'The event has been so successful that it has been adopted by over 120 countries and 700 cities worldwide.',
-      'You can hear every genre imaginable, from classical orchestras in museum courtyards to punk rock bands on street corners and techno DJs in public squares.'
+      'Une règle stricte du festival est que tous les concerts doivent être entièrement gratuits pour le public et que les artistes jouent bénévolement.',
+      'Il a été initié en France en 1982 par le ministre de la Culture Jack Lang et est devenu un phénomène culturel mondial.',
+      'L’événement a tellement de succès qu’il a été adopté par plus de 120 pays et 700 villes à travers le monde.',
+      'On peut y entendre tous les genres possibles, des orchestres classiques dans les cours de musées aux groupes de punk dans la rue en passant par des DJ techno sur des places publiques.'
     ],
     image: 'https://www.fohhn.com/fileadmin/_processed_/d/5/csm_gallery_main_fete_de_la_musique_nice_france_fbf4dabadc.jpg'
   },
   {
     id: 'bastille-day',
     name: 'Bastille Day',
-    date: 'July 14',
+    date: '14 juillet',
     month: 7,
     city: 'Nationwide',
     category: 'National Holidays',
-    description: 'Known in France as "La Fête Nationale" or "Le 14 Juillet", Bastille Day is the French national holiday. It commemorates the storming of the Bastille prison in 1789, a turning point of the French Revolution, as well as the Fête de la Fédération which celebrated the unity of the French people in 1790. The day is marked by immense patriotic pride, grand military displays, widespread public partying, and spectacular fireworks.',
+    description: 'Connue en France sous le nom de « Fête nationale » ou « le 14 juillet », la fête nationale commémore la prise de la Bastille en 1789, un moment clé de la Révolution française, ainsi que la Fête de la Fédération de 1790 qui célébrait l’unité du peuple français. La journée est marquée par une immense fierté patriotique, de grands défilés militaires, des festivités populaires et des feux d’artifice spectaculaires.',
     facts: [
-      'The morning features the oldest and largest regular military parade in Europe, marching down the Champs-Élysées in Paris before the President of the Republic.',
-      'Spectacular fireworks displays light up the sky across the country, with the most famous show taking place at the Eiffel Tower, synchronized to music.',
-      'On the evenings of July 13th and 14th, fire stations across France open their doors to the public for the traditional "Bals des pompiers" (Firemen\'s balls), featuring live music and dancing until dawn.',
-      'The Patrouille de France (the French Air Force precision aerobatic demonstration team) performs a stunning flyover, trailing blue, white, and red smoke.'
+      'Le matin, a lieu le plus ancien et le plus grand défilé militaire régulier d’Europe, sur les Champs-Élysées, en présence du président de la République.',
+      'Des feux d’artifice spectaculaires illuminent le ciel dans tout le pays, le plus célèbre étant celui tiré près de la Tour Eiffel, synchronisé sur de la musique.',
+      'Les soirs des 13 et 14 juillet, les casernes de pompiers ouvrent leurs portes au public pour les traditionnels bals des pompiers, avec de la musique live et des danses jusqu’à l’aube.',
+      'La Patrouille de France (l’équipe de voltige aérienne de l’armée de l’air) effectue un passage avec un sillage bleu, blanc, rouge.'
     ],
     image: 'https://upload.wikimedia.org/wikipedia/en/1/16/Feu_d%27artifice_du_14_juillet_2017_depuis_le_champ_de_Mars_%C3%A0_Paris%2C_devant_la_Tour_Eiffel%2C_Bastille_day_2017_%2835118978683%29.jpg'
   },
   {
     id: 'lorient-celtic',
     name: 'Festival Interceltique de Lorient',
-    date: 'Early August',
+    date: 'début août',
     month: 8,
     city: 'Lorient',
     category: 'Music',
-    description: 'The Festival Interceltique de Lorient is a massive annual gathering in Brittany that celebrates the rich cultural heritage of the Celtic nations. For ten days, the city of Lorient becomes the global capital of Celtic music, dance, and art. It is a vibrant, deeply rooted festival that showcases the shared traditions and modern evolutions of Celtic culture from regions across Europe and the diaspora.',
+    description: 'Le Festival Interceltique de Lorient est un immense rassemblement annuel en Bretagne qui célèbre le riche héritage culturel des nations celtiques. Pendant dix jours, la ville de Lorient devient la capitale mondiale de la musique, de la danse et de l’art celtiques. C’est un festival vibrant et profondément enraciné qui met en lumière les traditions communes et les évolutions modernes de la culture celtique venant de toute l’Europe et de la diaspora.',
     facts: [
-      'It is one of the largest festivals in Europe, attracting around 700,000 to 800,000 festival-goers each year.',
-      'The festival features thousands of artists from Brittany, Ireland, Scotland, Wales, Cornwall, the Isle of Man, Galicia, Asturias, and even Celtic diaspora in Australia and Acadia.',
-      'The absolute highlight is the "Grand Parade of Celtic Nations", where thousands of musicians and dancers in traditional dress march through the streets.',
-      'The festival includes not just music, but also traditional sports, art exhibitions, and a massive Celtic market.'
+      'C’est l’un des plus grands festivals d’Europe, attirant entre 700 000 et 800 000 visiteurs par an.',
+      'Le festival réunit des milliers d’artistes de Bretagne, d’Irlande, d’Écosse, du Pays de Galles, de Cornouailles, de l’Île de Man, de Galice, des Asturies et même de la diaspora celtique en Australie et en Acadie.',
+      'Le moment fort est la « Grande Parade des Nations Celtiques », où des milliers de musiciens et danseurs en costume traditionnel défilent dans les rues.',
+      'Le festival propose non seulement de la musique, mais aussi des sports traditionnels, des expositions d’art et un grand marché celtique.'
     ],
     image: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/FIL2009-010_KevrennAlre.jpg'
   },
   {
     id: 'rio-loco',
     name: 'Rio Loco',
-    date: 'Early June',
+    date: 'début juin',
     month: 6,
     city: 'Toulouse',
     category: 'Music',
-    description: 'Rio Loco is a vibrant festival celebrating Colombian and Latin American culture in Toulouse. This high-energy event features spectacular live music performances, traditional dances, colorful parades, and authentic South American cuisine. The festival transforms the streets of Toulouse into a lively celebration of Latin rhythms, bringing together dancers, musicians, and cultural enthusiasts from across Europe. It\'s a festival that captures the spirit, passion, and joy of Colombian traditions.',
+    description: 'Rio Loco est un festival vibrant qui célèbre la culture colombienne et latino-américaine à Toulouse. Cet événement énergique propose des concerts spectaculaires, des danses traditionnelles, des parades colorées et une cuisine authentique d’Amérique du Sud. Le festival transforme les rues de Toulouse en une fête joyeuse de rythmes latinos, rassemblant danseurs, musiciens et amateurs de culture venus de toute l’Europe. C’est un festival qui capture l’esprit, la passion et la joie des traditions colombiennes.',
     facts: [
-      'Rio Loco features live performances from renowned Colombian and Latin American artists.',
-      'The festival showcases traditional dances including salsa, cumbia, and reggaeton.',
-      'Street parades feature elaborate costumes, vibrant colors, and energetic dancers.',
-      'The event includes workshops, cultural exhibitions, and authentic Colombian food stalls with traditional dishes and tropical fruits.'
+      'Rio Loco présente des concerts d’artistes colombiens et latino-américains renommés.',
+      'Le festival met en avant des danses traditionnelles comme la salsa, la cumbia et le reggaeton.',
+      'Des parades de rue montrent des costumes élaborés, des couleurs vives et des danseurs énergiques.',
+      'L’événement propose des ateliers, des expositions culturelles et des stands de cuisine colombienne authentique avec des plats traditionnels et des fruits tropicaux.'
     ],
     image: 'https://cdt31.media.tourinsoft.eu/upload/Festival-Rio-Loco-2024-copie.jpg'
   },
   {
     id: 'nuit-blanche',
     name: 'Nuit Blanche',
-    date: 'First Saturday of October',
+    date: 'premier samedi d’octobre',
     month: 10,
     city: 'Paris',
     category: 'Cultural Traditions',
-    description: 'Nuit Blanche (White Night) is an annual all-night arts festival that transforms Paris into a massive, surreal, and interactive contemporary art gallery. From sunset to sunrise, museums, public spaces, monuments, and unexpected locations host avant-garde art installations, light shows, and live performances. It is a night where the city itself becomes the canvas, encouraging citizens to explore their urban environment in a completely new way.',
+    description: 'Nuit Blanche est un festival artistique nocturne annuel qui transforme Paris en une immense galerie d’art contemporain surréaliste et interactive. Du coucher au lever du soleil, musées, espaces publics, monuments et lieux inattendus accueillent des installations d’art avant-gardistes, des spectacles lumineux et des performances en direct. C’est une nuit où la ville elle-même devient une toile, invitant les habitants à redécouvrir leur environnement urbain.',
     facts: [
-      'All events, exhibitions, and public transport (including specific metro lines) are completely free and run all night to accommodate the massive crowds.',
-      'The festival often features monumental, site-specific installations, such as floating artworks on the Seine or massive light projections on historic facades.',
-      'The concept was created in Paris in 2002 and has since been adopted by over 120 cities worldwide, including Rome, Toronto, and Kyoto.',
-      'The event is designed to bring contemporary art to a wider audience, breaking down the barriers of traditional museum spaces.'
+      'Tous les événements, expositions et transports en commun (y compris certaines lignes de métro) sont entièrement gratuits et fonctionnent toute la nuit pour accueillir les foules.',
+      'Le festival propose souvent des installations monumentales et site-spécifiques, comme des œuvres flottantes sur la Seine ou de gigantesques projections lumineuses sur des façades historiques.',
+      'Le concept a été créé à Paris en 2002 et a depuis été adopté par plus de 120 villes dans le monde, notamment Rome, Toronto et Kyoto.',
+      'L’événement vise à rapprocher l’art contemporain d’un large public en brisant les barrières des espaces muséaux traditionnels.'
     ],
     image: 'https://cultmtl.com/wp-content/uploads/2018/02/nb-2018.jpg'
   },
   {
     id: 'beaujolais-nouveau',
     name: 'Beaujolais Nouveau Day',
-    date: 'Third Thursday of November',
+    date: 'troisième jeudi de novembre',
     month: 11,
     city: 'Nationwide',
     category: 'Food & Wine',
-    description: 'Beaujolais Nouveau Day is a joyous celebration marking the release of the first French wine of the season. Made from Gamay grapes in the Beaujolais region, this young wine is fermented for just a few weeks before being rushed to market. The release is a highly anticipated event, celebrated in bistros, cafes, and restaurants across France and around the world, symbolizing the end of the harvest and the beginning of the festive season.',
+    description: 'La Journée du Beaujolais Nouveau est une célébration joyeuse marquant la sortie du premier vin français de la saison. Issu du cépage Gamay dans la région du Beaujolais, ce vin jeune est fermenté pendant seulement quelques semaines avant d’être expédié sur les marchés. Sa sortie est un événement très attendu, célébré dans les bistrots, cafés et restaurants de France et du monde entier, symbolisant la fin des vendanges et le début de la saison festive.',
     facts: [
-      'By strict French law, the wine cannot be released until exactly 12:01 a.m. on the third Thursday of November.',
-      'The phrase "Le Beaujolais nouveau est arrivé!" (The new Beaujolais has arrived!) is famously used to announce the wine\'s release.',
-      'The wine is light, fruity, and meant to be drunk young and slightly chilled; it is not a wine meant for aging.',
-      'The region of Beaujolais hosts massive parties, including the "Les Sarmentelles" festival in Beaujeu, featuring a torchlight parade and fireworks.'
+      'Par une loi française stricte, le vin ne peut être mis en vente qu’à 0h01 le troisième jeudi de novembre.',
+      'La phrase « Le Beaujolais nouveau est arrivé ! » est utilisée pour annoncer la sortie du vin.',
+      'Ce vin est léger, fruité et doit être bu jeune et légèrement frais ; il n’est pas fait pour être conservé.',
+      'La région du Beaujolais organise d’immenses fêtes, notamment « Les Sarmentelles » à Beaujeu, avec un cortège aux flambeaux et des feux d’artifice.'
     ],
     image: 'https://cdn.shoplightspeed.com/shops/635650/files/66707883/copy-of-tasting-room-slides.png'
   },
   {
     id: 'strasbourg-christmas',
     name: 'Strasbourg Christmas Market',
-    date: 'Late November - December 24',
+    date: 'fin novembre - 24 décembre',
     month: 12,
     city: 'Strasbourg',
     category: 'Cultural Traditions',
-    description: 'The Strasbourg Christmas Market (Christkindelsmärik) is one of the oldest, largest, and most magical Christmas markets in Europe. Located in the Alsace region, the city embraces its dual French and German heritage to create a truly unique festive atmosphere. The entire city center is illuminated with miles of fairy lights, transforming Strasbourg into the self-proclaimed "Capital of Christmas," filled with the scents of mulled wine, gingerbread, and roasting chestnuts.',
+    description: 'Le marché de Noël de Strasbourg (Christkindelsmärik) est l’un des plus anciens, des plus grands et des plus magiques d’Europe. Située en Alsace, la ville met à profit son héritage franco-allemand pour créer une atmosphère festive unique. Le centre-ville entier est illuminé de kilomètres de guirlandes, transformant Strasbourg en la « Capitale de Noël », embaumée par l’odeur du vin chaud, du pain d’épices et des marrons grillés.',
     facts: [
-      'Dating back to 1570, it is the oldest Christmas market in France and one of the oldest in Europe.',
-      'The market features over 300 wooden chalets spread across various squares in the city center, notably around the stunning Strasbourg Cathedral.',
-      'A massive, beautifully decorated real Christmas tree (Le Grand Sapin), often over 30 meters tall, is erected in Place Kléber.',
-      'The market is famous for traditional Alsatian crafts, ornaments, and culinary specialties like bredele (Christmas cookies) and vin chaud (mulled wine).'
+      'Créé en 1570, c’est le plus ancien marché de Noël de France et l’un des plus anciens d’Europe.',
+      'Le marché comporte plus de 300 chalets en bois répartis sur plusieurs places du centre-ville, notamment autour de la magnifique cathédrale de Strasbourg.',
+      'Un immense sapin de Noël décoré (Le Grand Sapin), souvent de plus de 30 mètres de haut, est dressé place Kléber.',
+      'Le marché est réputé pour son artisanat alsacien traditionnel, ses décorations et ses spécialités culinaires comme les bredeles (biscuits de Noël) et le vin chaud.'
     ],
     image: 'https://www.afsf.com/media/website_pages/news/blog/bculture/the-strasbourg-christmas-market-a-celebration-of-magic-tradition-and-local-craftsmanship/strasbourg-marche-de-noel.jpeg'
   }
